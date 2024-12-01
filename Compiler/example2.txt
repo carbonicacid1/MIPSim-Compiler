@@ -1,0 +1,12 @@
+ADD $1,$3,$3
+AND $3,$3,$3
+ADDI $2,$1,0f0f
+LI $1,1002
+NOP # what
+NOP
+ADD $1,$3,$3
+BEQ $0,$0,fffc # Jump to itself (jumps to the next instruction at 0000, each instruction 4 bytes away)
+BEQ $0,$0,0004 # Jump to the instruction after the next
+NOP
+ADD $1,$3,$3
+BEQ $0,$0,fff8 # Jumps to the previous instruction
