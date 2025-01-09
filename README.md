@@ -17,6 +17,9 @@ Comments are allowed by putting '#' at the end of the instruction as shown in ex
 Empty spaces between instructions/functions should be filled with NOPs.
 
 Download the release version at https://github.com/carbonicacid1/MIPSim-Compiler/releases
+
 Or compile the program yourself using pyinstaller
+
 pyinstaller compile.py --onefile
+
 here's a video tutorial: https://www.youtube.com/watch?v=bqNvkAfTvIc
